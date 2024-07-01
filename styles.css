@@ -204,6 +204,43 @@ nav a:hover {
     margin-bottom: 20px;
 }
 
+form {
+    max-width: 600px; 
+    margin: 0 auto; 
+    padding: 20px;
+    background-color: #f4f4f4; 
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group input,
+.input-group textarea {
+    width: 100%; 
+    padding: 10px; 
+    margin-bottom: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    box-sizing: border-box; 
+}
+
+.input-group .Sendbtn {
+    width: 100%; 
+    padding: 10px; 
+    border: none; 
+    background-color: #007bff; 
+    color: white; 
+    border-radius: 5px; 
+    cursor: pointer; 
+}
+
+.input-group .Sendbtn:hover {
+    background-color: #0056b3;
+}
+
 footer {
     background-color: #333;
     color: #fff;
@@ -280,6 +317,118 @@ footer {
         margin-top: 20px;
     }
 }
+/* Tema Oscuro */
+.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
 
+.dark-mode nav ul {
+    background-color: #333;
+}
 
+.dark-mode nav ul li a {
+    color: #bbb;
+}
 
+.dark-mode nav ul li a:hover {
+    background-color: #444;
+}
+
+.dark-mode header,
+.dark-mode footer {
+    background-color: #333;
+}
+
+.dark-mode footer form div button {
+    background-color: #555;
+}
+
+/* Interruptor de modo oscuro */
+.switch {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    display: inline-block;
+    width: 34px;
+    height: 20px;
+}
+
+.switch input {
+    display: none;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 20px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+    transform: translateX(14px);
+}
+.dark-mode .methodology {
+    background-color: #000;
+    color: #fff;
+}
+
+.dark-mode .container.services {
+    background-color: #000;
+    color: #fff;
+}
+.dark-mode .service-text{
+    background-color: #000;
+    color: #fff;
+}
+.dark-mode .methodology ul li{
+    background-color: #000;
+    color: #fff;
+}
+.dark-mode .contact{
+    background-color: #000;
+    color: #fff;
+}
+.dark-mode .container h2{
+    color: #fff;
+}
+.dark-mode .container h3{
+    color: #fff;
+}
+.dark-mode .container p{
+    color: #fff;
+}
+.dark-mode .methodology-service-item p{
+    color: #000;
+}
+body {
+    --background: #f9f9f9;
+    --text-color: #333;
+}
+
+body {
+    background-color: var(--background);
+    color: var(--text-color);
+    transition: background-color 0.5s, color 0.5s;
+}
